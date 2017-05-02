@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/devopssample.module.rest.HelloWorld_API-HelloWorld.json",
+        "type": "generated"
+    }]
+}

@@ -1,0 +1,37 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Simple Hello World API",
+    "description" : "Simple Hello World API"
+  },
+  "host" : "localhost:8585",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/helloworld/{your_name}" : {
+      "get" : {
+        "description" : "You are the world; Enter your name and we'll say hello to you",
+        "operationId" : "get-helloworld",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "your_name",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}

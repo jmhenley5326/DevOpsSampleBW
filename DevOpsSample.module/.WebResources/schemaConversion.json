@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/DevOpsSample.module/Service Descriptors/devopssample.module.rest.HelloWorld_API-HelloWorld.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://xmlns.example.com/HelloWorld/parameters"
+}]}
