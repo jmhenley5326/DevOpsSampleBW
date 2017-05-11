@@ -3,7 +3,7 @@
 	<globalVariables>
 		<globalVariable>
 			<name>ELB_NAME</name>
-			<value>DevOpsSampleBW-LB-1074053438.us-east-1.elb.amazonaws.com</value>
+			<value>DevOpsSampleBW-LB-1430584598.us-east-1.elb.amazonaws.com</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
