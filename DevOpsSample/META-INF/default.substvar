@@ -2,14 +2,6 @@
 <repository xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "http://www.tibco.com/xmlns/repo/types/2002">
 	<globalVariables>
 		<globalVariable>
-			<name>ELB_NAME</name>
-			<value>DevOpsSampleBW-LB-1430584598.us-east-1.elb.amazonaws.com</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
 			<name>//DevOpsSample.module//BW.DEPLOYMENTUNIT.TYPE</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
@@ -80,14 +72,6 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>//DevOpsSample.module//ELB_NAME</name>
-			<value>%%ELB_NAME%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
 		</globalVariable>
 	</globalVariables>
 </repository>

@@ -22,7 +22,6 @@
   <sca:property xmi:id="_RtWtoC6wEeezKoF0EoXN2Q" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_RtYi0C6wEeezKoF0EoXN2Q" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_RtbmIC6wEeezKoF0EoXN2Q" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
-  <sca:property xmi:id="_ZwpcMDXjEeeR37jJSiHCFA" name="ELB_NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_sreJ0C7EEeezKoF0EoXN2Q" name="ComponentHelloWorld_API" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_sreJ0S7EEeezKoF0EoXN2Q" processName="devopssample.module.rest.HelloWorld_API"/>
     <sca:service xmi:id="_srmFoC7EEeezKoF0EoXN2Q" name="helloworld">
