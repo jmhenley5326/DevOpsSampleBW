@@ -4,9 +4,11 @@ Bundle-Name: DevOpsSample Module
 Bundle-SymbolicName: DevOpsSample.module
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
-TIBCO-BW-Version: 6.3.5 V17 2017-02-02
-TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
-TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpconnector)",
+ com.tibco.bw.binding.model; filter:="(name=bw.rest)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
-Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tibco.bw.sharedresource.model; filter:="(name=bw.httpconnector)",com.tibco.bw.binding.model; filter:="(name=bw.rest)"
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+TIBCO-BW-Version: 6.3.5 V17 2017-02-02
