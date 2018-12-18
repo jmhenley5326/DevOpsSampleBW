@@ -11,7 +11,8 @@
   "paths" : {
     "/helloworld/{your_name}" : {
       "get" : {
-        "description" : "You are the world; Enter your name and we'll say hello to you",
+        "summary" : "You are the world; Enter your name and we'll say hello to you",
+        "description" : "",
         "operationId" : "get-helloworld",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],

@@ -10,6 +10,7 @@
       <parameters xmi:id="_ssxKUC7EEeezKoF0EoXN2Q">
         <parameterMapping xmi:id="_ssxxYC7EEeezKoF0EoXN2Q" parameterName="your_name" parameterType="Path" required="true"/>
       </parameters>
+      <advancedConfig xmi:id="_SPbpwALdEemOTaJDazDC1A" blockingQueueSize="2147483647"/>
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_ssCxkS7EEeezKoF0EoXN2Q" bindingName="RestService"/>
   </sca:service>
@@ -22,6 +23,7 @@
   <sca:property xmi:id="_RtWtoC6wEeezKoF0EoXN2Q" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_RtYi0C6wEeezKoF0EoXN2Q" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_RtbmIC6wEeezKoF0EoXN2Q" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BT1WYAMAEemOTaJDazDC1A" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
   <sca:component xmi:id="_sreJ0C7EEeezKoF0EoXN2Q" name="ComponentHelloWorld_API" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_sreJ0S7EEeezKoF0EoXN2Q" processName="devopssample.module.rest.HelloWorld_API"/>
     <sca:service xmi:id="_srmFoC7EEeezKoF0EoXN2Q" name="helloworld">
