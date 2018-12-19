@@ -69,14 +69,11 @@
                   <tag>latest</tag>
                 </tags>
                 <ports>
-                  <port>8585</port>
+                  <port>8080</port>
                 </ports>
               </build>
               <run>
                 <namingStrategy>alias</namingStrategy>
-                <ports>
-                  <port>${bwdocker.port.p0}</port>
-                </ports>
               </run>
             </image>
           </images>
