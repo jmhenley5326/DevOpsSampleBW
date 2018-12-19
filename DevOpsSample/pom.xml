@@ -12,10 +12,10 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>true</skipTests>
-    <project.type>Docker</project.type>
     <bw.Home></bw.Home>
-    <docker.property.file>docker-dev.properties</docker.property.file>
+    <project.type>Docker</project.type>
     <failIfNoTests>false</failIfNoTests>
+    <docker.property.file>docker-dev.properties</docker.property.file>
     <tibco.Home></tibco.Home>
   </properties>
   <build>
@@ -74,6 +74,9 @@
               </build>
               <run>
                 <namingStrategy>alias</namingStrategy>
+                <ports>
+                  <port>${bwdocker.port.p0}</port>
+                </ports>
               </run>
             </image>
           </images>
