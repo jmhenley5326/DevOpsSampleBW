@@ -1,0 +1,16 @@
+<process-dir height="412" id="devopssample.module.rest.HelloWorld_API" name="devopssample.module.rest.HelloWorld_API" type="process" width="609" x="140" y="20">
+<partnerLinks>
+<partner-link id="helloworld" myRole="use" name="helloworld" partnerLinkType="partnerLinkType" partnerType="bw.rest"/>
+</partnerLinks>
+<ProcessInfo createdBy="jasonhenley" createdOn="Mon May 01 18:20:00 CDT 2017" description="" modifiedBy="" modifiedOn="" modifiers="public" productVersion="6.3.5 V17 2017-02-02" scalable="true" singleton="true" stateless="true" type="IT"/>
+<pick collapse="false" createInstance="true" height="161" id="7ce1a0c2-0bd1-4ab1-8776-cf44660078fb" name="pick" type="pick" width="458" x="96" y="64">
+<on-message height="141" id="ce3d4cff-6527-4cb2-8e14-606efd7ad3c6" input="true" operation="get" output="true" partner-link="helloworld" portType="helloworld" type="onMessage" variable="get" width="440" x="-11" y="-9">
+<activity-dir height="16" id="a2639e75-4393-43f8-9e63-7d79fe182659" name="OnMessageStart" type="onMessageStart" width="16" x="-19" y="63"/>
+<activity-dir height="48" id="a0e0d540-713a-4887-8da5-206f736f086c" name="getOut" operation="get" partnerLink="helloworld" portType="helloworld" type="com.tibco.bw.core.design.process.editor.Activity_4002_Reply" variable="getOut-input" width="48" x="308" y="34">
+<inputBinding expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20170501182000PLT&quot; xmlns:tns1=&quot;http://www.example.com/namespaces/tns/1493680669677&quot; xmlns:tns2=&quot;http://xmlns.example.com/HelloWorld/parameters&quot; version=&quot;2.0&quot;&gt;&lt;xsl:param name=&quot;get&quot;/&gt;&lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;&gt;&lt;tns:getResponse&gt;&lt;item&gt;&lt;xsl:value-of select=&quot;concat(&amp;quot;Hello &amp;quot;,$get/parameters/tns2:helloworldGetParameters/tns2:your_name)&quot;/&gt;&lt;/item&gt;&lt;/tns:getResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;"/>
+<partBinding expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20170501182000PLT&quot; xmlns:tns1=&quot;http://www.example.com/namespaces/tns/1493680669677&quot; xmlns:tns2=&quot;http://xmlns.example.com/HelloWorld/parameters&quot; version=&quot;2.0&quot;&gt;&#10;    &lt;xsl:param name=&quot;get.parameters&quot;/&gt;&#10;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;&gt;&#10;        &lt;item&gt;&#10;            &lt;xsl:value-of select=&quot;concat(&amp;quot;Hello &amp;quot;,$get.parameters/tns2:your_name)&quot;/&gt;&#10;        &lt;/item&gt;&#10;    &lt;/xsl:template&gt;&#10;&lt;/xsl:stylesheet&gt;"/>
+</activity-dir>
+<activity-dir height="16" id="fbf2bc30-0f40-46b6-8427-4a3069f57827" name="OnMessageEnd" type="onMessageEnd" width="16" x="438" y="63"/>
+</on-message>
+</pick>
+</process-dir>
