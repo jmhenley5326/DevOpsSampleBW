@@ -15,6 +15,7 @@
     <bw.Home></bw.Home>
     <project.type>Docker</project.type>
     <failIfNoTests>false</failIfNoTests>
+    <docker.env.property.file>docker-host-env-dev.properties</docker.env.property.file>
     <docker.property.file>docker-dev.properties</docker.property.file>
     <tibco.Home></tibco.Home>
   </properties>
@@ -42,6 +43,7 @@
         <configuration>
           <files>
             <file>${docker.property.file}</file>
+            <file>${docker.env.property.file}</file>
           </files>
         </configuration>
       </plugin>
@@ -77,6 +79,7 @@
                 <ports>
                   <port>${bwdocker.port.p0}</port>
                 </ports>
+                <envPropertyFile>${docker.env.property.file}</envPropertyFile>
               </run>
             </image>
           </images>
